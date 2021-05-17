@@ -55,7 +55,7 @@ function _arrayLikeToArray(arr, len) {
 
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}var script = {
+}var script$1 = {
   name: "mxpButton",
   props: {
     msg: String,
@@ -67,19 +67,19 @@ function _nonIterableRest() {
     btn.style.backgroundColor = this.color ? this.color : "";
     btn.style.color = this.light ? "white" : "black";
   }
-};var _withId = /*#__PURE__*/vue.withScopeId("data-v-0ea572d2");
+};var _withId$1 = /*#__PURE__*/vue.withScopeId("data-v-0ea572d2");
 
 vue.pushScopeId("data-v-0ea572d2");
 
-var _hoisted_1 = {
+var _hoisted_1$1 = {
   id: "btn-component",
   class: "color default-style"
 };
 
 vue.popScopeId();
 
-var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return vue.openBlock(), vue.createBlock("div", null, [vue.createVNode("button", _hoisted_1, [vue.renderSlot(_ctx.$slots, "default")])]);
+var render$1 = /*#__PURE__*/_withId$1(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return vue.openBlock(), vue.createBlock("div", null, [vue.createVNode("button", _hoisted_1$1, [vue.renderSlot(_ctx.$slots, "default")])]);
 });function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
   var insertAt = ref.insertAt;
@@ -105,9 +105,37 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   } else {
     style.appendChild(document.createTextNode(css));
   }
-}var css_248z = "\n.color[data-v-0ea572d2] {\n  background: color;\n}\n.default-style[data-v-0ea572d2] {\n  margin: 1rem;\n  padding-inline: 1rem;\n  padding-block: 0.5rem;\n  border-radius: 0.3rem;\n  border: 1px solid transparent;\n  box-shadow: 0 1px 10px 1.5px grey;\n  cursor: pointer;\n}\n";
+}var css_248z$1 = "\n.color[data-v-0ea572d2] {\n  background: color;\n}\n.default-style[data-v-0ea572d2] {\n  margin: 1rem;\n  padding-inline: 1rem;\n  padding-block: 0.5rem;\n  border-radius: 0.3rem;\n  border: 1px solid transparent;\n  box-shadow: 0 1px 10px 1.5px grey;\n  cursor: pointer;\n}\n";
+styleInject(css_248z$1);script$1.render = render$1;
+script$1.__scopeId = "data-v-0ea572d2";var script = {
+  name: "mxpInput",
+  props: {
+    msg: String,
+    color: String,
+    light: Boolean
+  },
+  mounted: function mounted() {
+    var btn = document.getElementById("input-component");
+    btn.style.backgroundColor = this.color ? this.color : "";
+    btn.style.color = this.light ? "white" : "black";
+  }
+};var _withId = /*#__PURE__*/vue.withScopeId("data-v-c8fc64fc");
+
+vue.pushScopeId("data-v-c8fc64fc");
+
+var _hoisted_1 = /*#__PURE__*/vue.createVNode("button", {
+  type: "text",
+  id: "input-component",
+  class: "color default-style"
+}, null, -1);
+
+vue.popScopeId();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return vue.openBlock(), vue.createBlock("div", null, [_hoisted_1]);
+});var css_248z = "\n.color[data-v-c8fc64fc] {\n  background: color;\n}\n.default-style[data-v-c8fc64fc] {\n  margin: 1rem;\n  padding-inline: 1rem;\n  padding-block: 0.5rem;\n  border-radius: 0.3rem;\n  border: 1px solid black;\n  box-shadow: 0 1px 10px 1.5px grey;\n  cursor: pointer;\n}\n";
 styleInject(css_248z);script.render = render;
-script.__scopeId = "data-v-0ea572d2";/* eslint-disable import/prefer-default-export */var components$1=/*#__PURE__*/Object.freeze({__proto__:null,mxpButton: script});var install = function installMxpLibrary(app) {
+script.__scopeId = "data-v-c8fc64fc";/* eslint-disable import/prefer-default-export */var components$1=/*#__PURE__*/Object.freeze({__proto__:null,mxpButton: script$1,mxpInput: script});var install = function installMxpLibrary(app) {
   Object.entries(components$1).forEach(function (_ref) {
     var _ref2 = _slicedToArray(_ref, 2),
         componentName = _ref2[0],
@@ -116,7 +144,7 @@ script.__scopeId = "data-v-0ea572d2";/* eslint-disable import/prefer-default-exp
     app.component(componentName, component);
   });
 }; // Create module definition for Vue.use()
-var components=/*#__PURE__*/Object.freeze({__proto__:null,'default': install,mxpButton: script});// only expose one global var, with component exports exposed as properties of
+var components=/*#__PURE__*/Object.freeze({__proto__:null,'default': install,mxpButton: script$1,mxpInput: script});// only expose one global var, with component exports exposed as properties of
 // that global var (eg. plugin.component)
 
 Object.entries(components).forEach(function (_ref) {
