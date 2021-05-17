@@ -24,3 +24,9 @@ app.use(mxpLibrary);
 app.mount('#app')
 
 ```
+
+## Render in .vue file
+
+```html
+<mxpButton color"purple" light>hi<mxpButton />
+```
