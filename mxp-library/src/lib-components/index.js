@@ -1,2 +1,4 @@
 /* eslint-disable import/prefer-default-export */
-export { default as mxpButton } from './mxpButton.vue';
+import mxpButton from './mxpButton.vue';
+import mxpInput from './mxpInput.vue';
+export { mxpButton, mxpInput };
