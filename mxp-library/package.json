@@ -1,6 +1,6 @@
 {
   "name": "mxp-library",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/mxp-library.ssr.js",
   "browser": "dist/mxp-library.esm.js",
@@ -19,7 +19,8 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
   "dependencies": {
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
