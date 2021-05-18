@@ -1,6 +1,6 @@
 earl<template>
   <div>
-    <button id="btn-component" class="color default-style">
+    <button id="btn-component" class="color hover:bg-white default-style">
       <slot></slot>
     </button>
   </div>

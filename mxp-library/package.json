@@ -1,6 +1,6 @@
 {
   "name": "mxp-library",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "dist/mxp-library.ssr.js",
   "browser": "dist/mxp-library.esm.js",
