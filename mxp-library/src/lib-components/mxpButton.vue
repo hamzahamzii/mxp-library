@@ -1,4 +1,4 @@
-<template>
+earl<template>
   <div>
     <button id="btn-component" class="color default-style">
       <slot></slot>
