@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="px-10 py-10 bg-red-50">
     <slot></slot>
   </div>
 </template>
