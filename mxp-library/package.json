@@ -1,6 +1,6 @@
 {
   "name": "mxp-library",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/mxp-library.ssr.js",
   "browser": "dist/mxp-library.esm.js",
@@ -15,10 +15,10 @@
   "sideEffects": false,
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+    "build": "rollup --config build/rollup.config.js",
+    "build:ssr": "rollup --config build/rollup.config.js --format cjs",
+    "build:es": "rollup --config build/rollup.config.js --format es",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife"
   },
   "dependencies": {},
   "devDependencies": {
