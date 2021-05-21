@@ -2,25 +2,28 @@
   "name": "mxp-library",
   "version": "1.1.0",
   "description": "",
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.ts",
+    "build": "rollup --config build/rollup.config.js",
+    "build:es": "rollup --config build/rollup.config.js --format es",
+    "build:ssr": "rollup --config build/rollup.config.js --format cjs",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife"
+  },
   "main": "dist/mxp-library.ssr.js",
-  "browser": "dist/mxp-library.esm.js",
   "module": "dist/mxp-library.esm.js",
+  "browser": "dist/mxp-library.esm.js",
   "unpkg": "dist/mxp-library.min.js",
-  "types": "mxp-library.d.ts",
   "files": [
     "dist/*",
     "mxp-library.d.ts",
     "src/**/*.vue"
   ],
-  "sideEffects": false,
-  "scripts": {
-    "serve": "vue-cli-service serve dev/serve.ts",
-    "build": "rollup --config build/rollup.config.js",
-    "build:ssr": "rollup --config build/rollup.config.js --format cjs",
-    "build:es": "rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife"
+  "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -44,12 +47,15 @@
     "rollup-plugin-vue": "^6.0.0",
     "tailwindcss": "^2.1.2",
     "typescript": "^3.8.3",
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vue-cli-plugin-tailwind": "~2.0.6"
   },
   "peerDependencies": {
     "vue": "^3.0.5"
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "sideEffects": false,
+  "types": "mxp-library.d.ts"
 }
